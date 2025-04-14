@@ -2,7 +2,7 @@ const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
 
 const banana = new Image();
-banana.src = "banana.png"; // Asegurate de tener esta imagen
+banana.src = "https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg";
 
 let x = 50;
 let y = 150;
@@ -44,7 +44,7 @@ function update() {
 
     // Colisiones simples
     if (x < p.x + 40 && x + 40 > p.x && (y < p.top || y + 40 > p.bottom)) {
-      alert("Game Over!");
+      alert("¡Game Over!");
       document.location.reload();
     }
   }
